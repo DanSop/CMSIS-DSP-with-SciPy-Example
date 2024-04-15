@@ -54,7 +54,7 @@ class SignalProcessor:
         
         return
         
-    def generate_input_signal(self) -> None:  
+    def generate_input_signal(self):  
     
         # Create a signal by having a base sinewave with additional noise superimposed upon it
         t = np.arange(0, 0.5, 1/self.fs) 
@@ -84,7 +84,7 @@ class SignalProcessor:
         
         return
 
-    def load_input_signal(self, filename=INPUT_FILENAME) -> None:
+    def load_input_signal(self, filename=INPUT_FILENAME):
     
         # Obtain the input signal
         input_filename = filename
