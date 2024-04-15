@@ -8,12 +8,12 @@
  *
  * @Note:    This file is quite heavily commented and documented as it is
  *           supposed to show a simple example of applying the filters and
- *			 demonstrates every step. The only ambiguities are the data
- *			 obtaining methods that I have left for the user. Note that
- *			 through the CMSIS DSP documentation, there are manyforms of
- *			 implementing the biquads with different efficiencies. Feel free
- *			 to try other methods, as I am confident there are many ways to
- *			 optimize the code for better performance.
+ *	     demonstrates every step. The only ambiguities are the data
+ *	     obtaining methods that I have left for the user. Note that
+ *	     through the CMSIS DSP documentation, there are manyforms of
+ *           implementing the biquads with different efficiencies. Feel free
+ *	     to try other methods, as I am confident there are many ways to
+ *	     optimize the code for better performance.
  *
  *******************************************************************************
  */
