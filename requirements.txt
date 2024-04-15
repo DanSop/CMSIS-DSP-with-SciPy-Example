@@ -1,0 +1,6 @@
+cmsisdsp
+numpy
+librosa
+soundfile
+matplotlib
+scipyz
