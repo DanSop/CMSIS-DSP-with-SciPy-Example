@@ -142,7 +142,7 @@ int main(void)
 {
     // int16 data buffer, note that float can be used but then the equalization
     // function conversions would have to change to use arm_float_to_q15()
-    // or arm_float_to_q31()
+    // or arm_float_to_q31(), remember to set the pointer to a buffer
     int16_t* databuf;
 
     // Initialize the filters before using them
@@ -240,10 +240,10 @@ static void ARM_Equalizer(int16_t* pSrc, int16_t* pDest, uint16_t blocksize)
 
     // Scale any one of the 6 bands, note this is not implemented...
     // .. but rather just shows an example of how to equalize the audio
-	{
-		// SCALE HERE IF DESIRED
-		arm_scale_q31(outputB1, 0x7FFFFFFF, SCALE_FACTOR, outputB1, blocksize);
-	}
+    {
+	// SCALE HERE IF DESIRED
+	arm_scale_q31(outputB1, 0x7FFFFFFF, SCALE_FACTOR, outputB1, blocksize);
+    }
 
     // Add corresponding elements of the 6 source buffers
     arm_add_q31(outputB1, outputB2, q31Dest, blocksize);
